@@ -1,3 +1,6 @@
+/**La clase Tarjeta nos permite crear un objeto Tarjeta y realizar con ella diversas operaciones
+tales como depositar y retirar saldo*/
+
 public class Tarjeta
 {
     private float saldo;
@@ -7,6 +10,9 @@ public class Tarjeta
         saldo=0;
     }
     
+    /**El metodo depositar permite por medio de ciertos chequeos, insertar a la tarjeta cierta cantidad de dinero
+     * @param dinero
+     */
     public void depositar(float dinero)
     {
         if(saldo>=0)
@@ -20,6 +26,10 @@ public class Tarjeta
            System.out.println("NO SE PUEDEN HACER DEPOSITOS NEGATIVOS");
         }
     }
+    /**Permite sustraer cierta cantidad de dinero siempre y cuando tu saldo sea suficiente
+     * @param dinero
+     * @return devuelve un entero que representa la cantidad de dinero que acabas de retirar
+     */
     
     public float retirar(float dinero)
     {
